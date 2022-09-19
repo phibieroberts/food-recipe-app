@@ -62,10 +62,12 @@ function Veggie() {
   );
 }
 const Wrapper = styled.div`
-  margin: 0rem;
+  h3 {
+    margin: 0.5rem;
+  }
   @media (max-width: ${({ theme }) => theme.mobile}) {
     h3 {
-      margin: 1rem;
+      margin: 0.5rem;
     }
   } ;
 `;

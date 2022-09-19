@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 function Recipe() {
   let params = useParams();
   const [details, setDetails] = useState({});
-  const [active, setActive] = useState("instrucctions");
+  const [active, setActive] = useState("instructions");
   const fetchDetails = async () => {
     const data = await fetch(
       `https://api.spoonacular.com/recipes/${params.name}/information?apiKey=${process.env.REACT_APP_API_KEY}`

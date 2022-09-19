@@ -21,7 +21,7 @@ function Search() {
   );
 }
 const FormStyle = styled.form`
-  margin: 3rem 15rem;
+  margin: 1.5rem 15rem;
 
   div {
     position: relative;

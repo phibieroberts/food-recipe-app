@@ -33,6 +33,8 @@ function Searched() {
   );
 }
 const Grid = styled.div`
+  margin-top: 2rem;
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
@@ -40,6 +42,8 @@ const Grid = styled.div`
 
 const Card = styled.div`
   img {
+    margin-top: 2rem;
+
     width: 100%;
     border-radius: 2rem;
   }

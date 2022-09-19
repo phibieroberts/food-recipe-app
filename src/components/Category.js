@@ -31,7 +31,6 @@ function Category() {
 const List = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-bottom: 0rem;
 
