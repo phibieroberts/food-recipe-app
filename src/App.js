@@ -36,7 +36,7 @@ const Logo = styled(Link)`
 `;
 
 const Nav = styled.div`
-padding:4rem 0rem
+margin:4rem 0rem
 display:flex;
 justify-content:flex-start;
 align-item:center;
@@ -44,6 +44,13 @@ padding:1rem;
 
 svg{
   font-size:2rem
-}`;
+}
+@media (max-width: ${({ theme }) => theme.mobile}) {
+  Nav{
+    padding:2rem 0rem
+
+  }
+} ;
+`;
 
 export default App;

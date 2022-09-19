@@ -62,7 +62,6 @@ function Popular() {
   );
 }
 const Wrapper = styled.div`
-  // margin: 4rem 0rem;
   h3{
     margin-bottom:0.5rem;
   }

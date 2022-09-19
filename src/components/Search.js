@@ -46,7 +46,7 @@ const FormStyle = styled.form`
     transform: translate(100%, -50%);
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin: 2rem 0rem 1rem 0rem;
+    margin: 0rem 0rem 1rem 0rem;
     input {
       font-size: 1rem;
     }
