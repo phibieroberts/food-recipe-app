@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { useParams, Link } from "react-router-dom";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function Cuisine() {
   const [cuisine, setCuisine] = useState([]);
@@ -16,16 +15,10 @@ function Cuisine() {
     setCuisine(recipes.results);
   };
   useEffect(() => {
-    console.log(params.type);
     getCuisine(params.type);
   }, [params.type]);
   return (
-    <Grid
-      animate={{ opacity: 1 }}
-      initial={{ opacity: 0 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
-    >
+    <Grid>
       {cuisine.map((item) => (
         <Card key={item.id}>
           <Link to={"/recipe/" + item.id}>
@@ -38,10 +31,10 @@ function Cuisine() {
   );
 }
 
-const Grid = styled(motion.div)`
+const Grid = styled.div`
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(20rem, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 3rem;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-top: 0rem;
@@ -63,7 +56,6 @@ const Card = styled.div`
     padding: 1rem;
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    grid-template-column: 1fr;
   }
   img {
     width: 100%;

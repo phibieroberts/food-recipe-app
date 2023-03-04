@@ -36,7 +36,7 @@ const Grid = styled.div`
   margin-top: 2rem;
 
   display: grid;
-  grid-template-columns: repeat(20rem, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 3rem;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-top: 0rem;
